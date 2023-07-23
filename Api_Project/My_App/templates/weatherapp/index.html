@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello!</title>
+    <meta charset= "UTF-8">
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+  </head>
+  <body>
+    <form method= "POST">
+        {% csrf_token %}
+        <input type= "text" placeholder= "Enter your city" name= "city" />
+        <button type= "Submit" > Submit </button>
+    </form>
+
+    <h1> City: {{ city }} </h1>
+    <h1> Tempreture: {{ temp }} </h1>
+    <h1> Description: {{ description }} </h1>
+    <h1> Date: {{ day }} </h1>
+    
+
+  </body>
+</html>
